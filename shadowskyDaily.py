@@ -51,14 +51,14 @@ def main():
                           shadowsky_remaining.text).group(1)
     remaining = "剩余流量:"+remaining
     print(remaining)
-/*
+'''
     text = "今天的签到已经完成啦QwQ"
     if send_to_wecom(text+'\n'+end+'\n'+remaining+'\n', os.environ['CORPID'], os.environ['AGENTID'], os.environ['SECRET']):
         print("企业微信推送成功")
     else:
         print("企业微信推送失败")
         exit(1)
-*/
+'''
 
 if __name__ == "__main__":
     main()
