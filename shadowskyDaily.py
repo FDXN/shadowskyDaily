@@ -64,7 +64,7 @@ def main():
     text = "今天的签到已经完成啦QwQ"
 
     if sendCode == "1":
-        if send_to_wecom(text+'\n'+end+'\n'+remaining+'\n', os.environ['CORPID'], os.environ['AGENTID'], os.environ['SECRET']):
+        if send_to_wecom(text+'\n'+end+'\n'+remaining, os.environ['CORPID'], os.environ['AGENTID'], os.environ['SECRET']):
             print("企业微信推送成功")
         else:
             print("企业微信推送失败")
